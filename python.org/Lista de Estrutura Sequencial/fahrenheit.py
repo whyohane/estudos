@@ -2,4 +2,4 @@
 print("Programa para transformar graus Fahrenheit em graus Celsius : \n")
 fahrenheit = float(input("Digite o valor em graus fahrenheit: \n"))
 celsius = 5 * ((fahrenheit-32) / 9)
-print("O valor em graus Celsius é: \n", celsius)
+print("O valor em graus Celsius é: {}".format(celsius))
