@@ -28,7 +28,7 @@ if menor < num2 and menor < num3 :
 menor = num2
 
 if menor < num1 and menor < num3 :
-    print("O maior número é o número {}. \n".format(num2))
+    print("O menor número é o número {}. \n".format(num2))
 
 menor = num3
 
