@@ -19,4 +19,3 @@ elif num == 6 :
     print("{} é sexta. \n".format(num))
 elif num == 7 :
     print("{} é sábado. \n".format(num))
-
