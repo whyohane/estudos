@@ -6,7 +6,7 @@ cont = 0
 
 maiorNum = int(input("Digite um valor qualquer: \n"))
 
-while cont < 5 :
+while cont < 4 :
     num = int(input("Digite um valor qualquer: \n"))
     cont += 1
     if maiorNum < num :
