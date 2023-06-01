@@ -5,22 +5,17 @@ Serão avaliados o funcionamento, o estilo e o número de testes (divisões) exe
 
 num = int(input("Verificador de números primos! Digite um número inteiro para delimitar o intervalo: \n"))
 
-aux = 0
-divs = 0
-divisores = []
-i = 1
+for my_number in range (1, num + 1):
+    divisores = []
+    divs = 0
+    for divisor in range (1, my_number + 1) :
 
-while i <= num :
-    while aux <= i :
-        aux = 0
-        aux += 1
-        if i % aux == 0 :
-            divisores.append(aux)
+        if my_number % divisor == 0 :
+            divisores.append(divisor)
             divs += 1
-            aux += 1
-            
-        if divs <= 2 :
-            print("O número {} é primo e seus divisores são: {}.\n".format(i, divisores))
-        else :
-            print("O número {} não é primo e seu divisores são: {}.\n".format(i, divisores))
-    i += 1
+    
+    if divs <= 2 :
+        print("O número {} é primo e tem {} divisores, sendo eles: {}\n".format(my_number, divs, divisores))
+    else :
+        print("O número {} não é primo e tem {} divisores, sendo eles: {}\n".format(my_number, divs, divisores))
+
