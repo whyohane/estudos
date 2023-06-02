@@ -6,4 +6,4 @@ for i in range(5) :
     num = int(input("Digite um número inteiro.\n"))
     lista.append(num)
 
-print("A lista de 5 números é:{}".format(lista))
+print("A lista de 5 números é:{}".format(lista)) 
