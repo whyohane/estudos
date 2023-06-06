@@ -45,7 +45,7 @@ while True :
         salarios.append(salarioBruto)
 
 for i in range(len(salarios)):
-    
+
     if salarios[i] >= 200 and salarios[i] <= 299:
         cont1 += 1
     elif salarios[i] >= 300 and salarios[i] <= 399:
@@ -74,4 +74,3 @@ print("{} funcionários ganharam entre 700 e 799 reais.\n".format(cont6))
 print("{} funcionários ganharam entre 800 e 899 reais.\n".format(cont7))
 print("{} funcionários ganharam entre 900 e 999 reais.\n".format(cont8))
 print("{} funcionários ganharam mais de 1000 reais.\n".format(cont9))
-
