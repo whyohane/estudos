@@ -18,23 +18,19 @@ Saltos: 6.5 - 6.1 - 6.2 - 5.4 - 5.3
 Média dos saltos: 5.9 m'''
 
 saltos = []
-nomes = []
 soma = 0
 media = 0
-medias = []
-saltosTotal = []
 
 while True:
-    
+    print("Digite um nome válido para entrar no programa ou um número para sair.\n")
     nome = input("Digite o nome do atleta: \n")
     
     if nome.isdigit():
 
-        print("Você digitou um número.\n")
+        print("Erro! Você digitou um número.\n")
+        print("Você saiu do programa.\n")
         break
     else:
-
-        nomes.append(nome)
         
         for i in range(1, 6):
 
@@ -42,13 +38,9 @@ while True:
             soma += salto
             saltos.append(salto)
 
-        saltosTotal.append(saltos)
         media = soma/5
-        medias.append(media)
-
-for i in range(len(nomes)):
-
-    print("Resultado final: \n")
-    print("Nome do atleta: {}.\n".format(nomes[i]))
-    print("O atleta teve os saltos: {} em metros.\n".format(saltosTotal[i]))
-    print("A média dos saltos é: {}m.\n".format(medias[i]))
+        print("\nResultado final:")
+        print("Nome do atleta: {}.".format(nome))
+        print("O atleta teve os saltos: {} em metros.".format(saltos))
+        print("A média dos saltos é: {}m.\n".format(media))
+    
