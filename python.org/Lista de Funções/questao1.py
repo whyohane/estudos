@@ -6,6 +6,7 @@ def enesima_linha(num):
 
         while True:
             print(aux, end=' ')
+            
             if cont == aux:
                 break
             cont+= 1
